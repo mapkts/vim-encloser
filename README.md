@@ -2,7 +2,7 @@
 
 A plugin for using `Enter` to close unbalaned brackets in cursorline
 
-![screenshot](https://github.com/mapkts/vim-encloser/screenshot.gif)
+![](https://raw.githubusercontent.com/mapkts/vim-encloser/master/screenshot.gif)
 
 ## Features
 
