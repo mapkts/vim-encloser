@@ -28,7 +28,7 @@ func! encloser#toggle()
     endif
 endf
 
-func! encloser#encloser()
+func! encloser#enclose()
     " if encloser is not enabled, just return
     if !get(b:, 'encloser') | return '' | endif
 

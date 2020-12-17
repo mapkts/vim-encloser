@@ -33,8 +33,7 @@ augroup encloser
     autocmd Filetype * call encloser#try_enable()
 augroup END
 
-" inoremap <Plug>(EncloserClose) <esc>:call encloser#close()<cr>
-inoremap <silent> <Plug>(EncloserClose) <C-R>=encloser#encloser()<CR>
+inoremap <silent> <Plug>(EncloserClose) <C-R>=encloser#enclose()<CR>
 
 nnoremap <silent> <Plug>(EncloserToggle) :<C-U>call encloser#toggle()<CR>
 
