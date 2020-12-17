@@ -8,14 +8,11 @@ let g:encloser_loaded = 1
 
 let g:encloser_default_escapes = ['''', '"', '/']
 let g:encloser_default_escape_leaders = ['\']
-let g:encloser_previous_mapped = ''
 
 func! encloser#try_enable()
     let mapped = maparg('<CR>', 'i')
     if mapped ==# '' && get(b:, 'encloser') ==# 1
         imap <CR> <CR><Plug>(EncloserClose)
-    else
-        execute 'let '.g:encloser_previous_mapped.'='.mapped
     endif
 endf
 
