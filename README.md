@@ -2,6 +2,8 @@
 
 A plugin for using `Enter` to close unbalaned brackets in cursorline
 
+![screenshot](https://github.com/mapkts/vim-encloser/screenshot.gif)
+
 ## Features
 
 - Can close three types of brackets: `{` `(` `[`
