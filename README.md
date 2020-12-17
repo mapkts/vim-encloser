@@ -7,7 +7,7 @@ A plugin for using `Enter` to close unbalaned brackets in cursorline
 ## Features
 
 - Can close three types of brackets: `{` `(` `[`
-- Brackets inside quoted string like `"{(["` `'{([` are escaped by default
+- Brackets inside quoted string like `"{(["` `'{(['` are escaped by default
 - Brackets inside comments like `// {` `/* { */` are escaped by default
 
 ## Examples
@@ -17,7 +17,7 @@ A plugin for using `Enter` to close unbalaned brackets in cursorline
 sort_by('hello', function (x) {|
 ```
 
-will expand to the following after pressing enter ( | stands for cursor position)
+will expand to the following after pressing enter ( | stands for cursor position )
 
 ```js
 sort_by('hello', function (x) {
@@ -74,13 +74,13 @@ Plug 'mapkts/vim-encloser'
 ## Customization
 
 - Encloser will only close brackets for supported languages ([see-here]), but you can enable it
-  global by putting `let g:encloser_enable_global = 1` in your vimrc.
+  globally by putting `let g:encloser_enable_global = 1` in your vimrc.
 
 [see-here]: https://github.com/mapkts/vim-encloser/blob/master/plugin/encloser.vim
 
 - Some language allow you define arbitrary syntax (like Rust's macros), you can temporarily disable
 this plugin by calling `:EncloserToggle` in current buffer. And yes, calling `:EncloserToggle` will
-enable it again. If you toggle Encloser on and off a lot, create a mapping for this command is
+enable it again. If you toggle `encloser` on and off a lot, create a mapping for this command is
 recommended.
 
 ```vim
