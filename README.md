@@ -20,7 +20,7 @@ will expand to the following after pressing enter ( | stands for cursor position
 ```js
 sort_by('hello', function (x) {
   |
-}
+})
 ```
 
 Brackets inside quoted string are automatically escaped
