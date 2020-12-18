@@ -78,9 +78,9 @@ Plug 'mapkts/vim-encloser'
 
 [see-here]: https://github.com/mapkts/vim-encloser/blob/master/plugin/encloser.vim
 
-- Some language allow you define arbitrary syntax (like Rust's macros), you can temporarily disable
+- Some languages allow you define arbitrary syntax (like Rust's macros), you can temporarily disable
 this plugin by calling `:EncloserToggle` in current buffer. And yes, calling `:EncloserToggle` will
-enable it again. If you toggle `encloser` on and off a lot, create a mapping for this command is
+enable it again. If you toggle encloser on and off a lot, create a mapping for this command is
 recommended.
 
 ```vim
