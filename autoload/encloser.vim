@@ -49,7 +49,7 @@ func! s:get_missing_brackets(line)
     let chars = split(line, '\zs')
 
     let escapes = get(b:, 'encloser_escapes', g:encloser_default_escapes)
-    let escape_leaders = get(b:, 'encloser_secape_leaders', g:encloser_default_escape_leaders)    
+    let escape_leaders = get(b:, 'encloser_escape_leaders', g:encloser_default_escape_leaders)    
     
     let skip = 0
     let skip_char = ''
