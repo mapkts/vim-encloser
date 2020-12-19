@@ -5,9 +5,7 @@ endif
 augroup encloser
     autocmd!
 
-    autocmd Filetype * if g:encloser_enable_global |
-        \ let b:encloser = 1 |
-        \ endif
+    autocmd Filetype * if g:encloser_enable_global | let b:encloser = 1 | endif
 
     autocmd Filetype c,cpp,cs,rust,java,javascript,typescript,javascript.jsx,javascriptreact,typescriptreact,php
         \ let b:encloser = 1 |
@@ -20,8 +18,8 @@ augroup encloser
         \ let b:encloser_lcomment_matcher = '\/\*.*\*\/'
 
     autocmd Filetype python
-                \ let b:encloser = 1 |
-                \ let b:encloser_lcomment_matcher = '\#.*'
+        \ let b:encloser = 1 |
+        \ let b:encloser_lcomment_matcher = '\#.*'
 
     autocmd Filetype go
         \ let b:encloser = 1 |
@@ -29,8 +27,8 @@ augroup encloser
 
 
     autocmd Filetype vim
-                \ let b:encloser = 1 |
-                \ let b:encloser_lcomment_matcher = '\".*'
+        \ let b:encloser = 1 |
+        \ let b:encloser_lcomment_matcher = '\".*'
 
     autocmd Filetype * call encloser#try_enable()
 augroup END
