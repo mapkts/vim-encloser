@@ -1,10 +1,12 @@
-let g:encloser_enable_global = 0
+if !get(g:, "encloser_enable_global")
+    let g:encloser_enable_global = 0
+endif
 
 augroup encloser
     autocmd!
 
     autocmd Filetype * if g:encloser_enable_global |
-        \ execute 'let '.b:encloser.'=1' |
+        \ let b:encloser = 1 |
         \ endif
 
     autocmd Filetype c,cpp,cs,rust,java,javascript,typescript,javascript.jsx,javascriptreact,typescriptreact,php
