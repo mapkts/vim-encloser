@@ -14,7 +14,7 @@ augroup encloser
 
     " Unstable hack to strip Rust lifetime 'a, 'abc
     autocmd Filetype rust
-        \ let b:encloser_lcomment_matcher =  '\(\/\/.*\|\/\*.*\*\/\|''\l\+\)'
+        \ let b:encloser_lcomment_matcher =  '\(\/\/.*\|\/\*.*\*\/\|''[_a-zA-Z]\+\)'
 
     autocmd Filetype css
         \ let b:encloser = 1 |
