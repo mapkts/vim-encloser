@@ -12,6 +12,10 @@ augroup encloser
         \ let b:encloser_bcomment_matcher = '^\*.*$' |
         \ let b:encloser_lcomment_matcher = '\(\/\/.*\|\/\*.*\*\/\)'
 
+    " Unstable hack to strip Rust lifetime 'a, 'abc
+    autocmd Filetype rust
+        \ let b:encloser_lcomment_matcher =  '\(\/\/.*\|\/\*.*\*\/\|''\l\+\)'
+
     autocmd Filetype css
         \ let b:encloser = 1 |
         \ let b:encloser_bcomment_matcher = '^\*.*$' |
