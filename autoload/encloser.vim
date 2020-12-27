@@ -6,7 +6,7 @@
 if exists("g:encloser_loaded") | finish | endif
 let g:encloser_loaded = 1
 
-let g:encloser_default_escapes = ['''', '"', '/']
+let g:encloser_default_escapes = ['''', '"']
 let g:encloser_default_escape_leaders = ['\']
 
 func! encloser#try_enable()
