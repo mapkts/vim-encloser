@@ -29,10 +29,8 @@ augroup encloser
         \ let b:encloser = 1 |
         \ let b:encloser_lcomment_matcher = '\/\/.*'
 
-
     autocmd Filetype vim
-        \ let b:encloser = 1 |
-        \ let b:encloser_lcomment_matcher = '\".*'
+        \ let b:encloser = 1
 
     autocmd Filetype * call encloser#try_enable()
 augroup END
